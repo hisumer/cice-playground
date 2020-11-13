@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.wrapper-box {
+  display: flex;
+  flex: 1;
+}
+.wrapper-box.section {
+  flex: 2;
+}
+.wrapper-box-f2 {
+  flex: 2;
+}
+.wrapper-box-f3 {
+  flex: 3;
+}

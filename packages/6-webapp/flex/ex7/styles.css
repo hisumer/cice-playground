@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+}
+.wrapper-box {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-box.section {
+  flex: 2;
+}
+.wrapper-box-f2 {
+  flex: 2;
+}
+.wrapper-box-f3 {
+  flex: 3;
+}
+.wrapper-box-f4 {
+  flex: 4;
+}
+
+.box.no-border {
+  border-color: transparent;
+}

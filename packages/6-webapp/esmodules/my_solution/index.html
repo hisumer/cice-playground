@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CICE - ESModules</title>
+    <style>
+      #root {
+        cursor: pointer;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="app-run">
+      <img class="app-img-run" src="./my_solution/img/run" title="CLICK ME TO START" />
+      <img class="app-img-404 hide" src="./my_solution/img/404.jpg" title="CLICK ME TO START" />
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script type="module">
+    import * as exportMain from './my_solution/main.js'
+
+    $(document).ready(function () {
+      $('.app-run').on('click', function () {
+        my_solutions.run(exportMain)
+      })
+    })
+  </script>
+
+  <script type="text/javascript">
+    let my_solutions = {
+      run: exportMain => {
+        exportMain.getDate()
+        exportMain.getTime()
+        exportMain.sayHi()
+        exportMain.dConfirm()
+        exportMain.loadModule()
+      }
+    }
+  </script>
+</html>

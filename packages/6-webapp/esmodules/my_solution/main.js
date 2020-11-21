@@ -1,0 +1,5 @@
+export { getTime as getDate } from './date.js'
+export { getTime } from './time.js'
+export { sayHi } from './alert.js'
+export { default as dConfirm } from './confirm.js'
+export { loadModule } from './prompt.js'
